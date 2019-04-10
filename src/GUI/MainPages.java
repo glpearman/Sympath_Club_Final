@@ -721,6 +721,8 @@ class MainPage extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         CardLayout card = (CardLayout)mainPanel.getLayout();
         card.show(mainPanel, "panelTwo");
+
+        //Database.PullMemberData()
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

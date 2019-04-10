@@ -17,7 +17,7 @@ public class Menu {
                     "4) Exit\n");
             choice = choose.nextLine();
             if ("1".equals(choice)) {
-                connect.pushNewMemberData();
+                //connect.pushNewMemberData();
                 choice = null;
             }
             if ("2".equals(choice)) {
@@ -25,7 +25,7 @@ public class Menu {
                 choice = null;
             }
             if ("3".equals(choice)) {
-                PullMemberMenu();
+                PullMemberData.getData();
                 choice = null;
             }
             if ("4".equals(choice)) {
@@ -34,28 +34,6 @@ public class Menu {
             }
         }
         choose.close();
-    }
-
-    public void PullMemberMenu() {
-        String choice = null;
-        while (!"end".equals(choice)) {
-            System.out.println("Select option:\n" +
-                    "1) View all members\n" +
-                    "2) View Member by ID\n" +
-                    "3) Back\n");
-            choice = choose.nextLine();
-            if ("1".equals(choice)) {
-                new PullMemberData();
-                choice = null;
-            }
-            if ("2".equals(choice)) {
-                PullMemberData.PullMemberByID();
-                choice = null;
-            }
-            if ("3".equals(choice)) {
-                break;
-            }
-        }
     }
 
    /* public void MakeNewMember(){
